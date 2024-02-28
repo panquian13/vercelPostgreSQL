@@ -1,6 +1,11 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '../ui/login-form';
  '../ui/login-form';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Login',
+};
 
 export default function LoginPage() {
     return (
@@ -14,5 +19,5 @@ export default function LoginPage() {
                 <LoginForm />
             </div>
         </main>
-    )
+    );
 }
